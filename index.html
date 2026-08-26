@@ -1,20 +1,39 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Google Fitbit Redirect — Demo Page</title>
-    <style>
-      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:4rem;text-align:center;color:#111}
-      .card{display:inline-block;padding:2rem;border:1px solid #e1e4e8;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Welcome</h1>
-      <p>This repository now contains an index.html page published via GitHub Pages.</p>
-      <p>Repository: <strong>kamalmokhmvl/google-fitbit-redirect</strong></p>
-      <p>Visit: <a href="https://kamalmokhmvl.github.io/google-fitbit-redirect/" target="_blank">https://kamalmokhmvl.github.io/google-fitbit-redirect/</a></p>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google OAuth Redirect</title>
+  <meta charset="utf-8" />
+</head>
+
+<body style="font-family:Consolas, monospace; padding:40px; background:#f5f5f5;">
+  <h2>Google OAuth Redirect Page</h2>
+
+  <p id="debug">Waiting for Google OAuth data...</p>
+
+  <script>
+    // Parse the Google OAuth redirect query string
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const error = params.get("error");
+    const error_description = params.get("error_description");
+
+    // Show debug information in browser
+    document.getElementById("debug").innerText =
+      `code=${code || "(none)"} | error=${error || "(none)"} | desc=${error_description || "(none)"}`;
+
+    // Send to opener (the SPFx popup)
+    if (window.opener) {
+      window.opener.postMessage(
+        {
+          provider: "google",
+          result: { code, error, error_description }
+        },
+        "*"
+      );
+    }
+
+    // Automatically close the window
+    setTimeout(() => window.close(), 200);
+  </script>
+</body>
 </html>
