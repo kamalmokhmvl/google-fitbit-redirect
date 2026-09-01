@@ -107,7 +107,21 @@
 
       <div class="page" id="admin"><div class="kpis"><div class="kpi"><small>Active participants</small><b>286</b></div><div class="kpi"><small>Devices connected</small><b>259</b></div></div></div>
     </section>
-    
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <nav aria-label="legal links">
+        <a href="terms.html">Terms of Service</a> |
+        <a href="policy.html">Privacy Policy</a>
+    </nav>
+    <div>© <span id="year">2026</span> Your Company</div>
+</footer>
+
+<script>
+  /* updates the year automatically */
+  (function(){
+    var el = document.getElementById('year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+</script>
   </main>
 </div>
 
