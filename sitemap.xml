@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main landing page -->
+  <url>
+    <loc>https://kamalmokhmvl.github.io/google-fitbit-redirect/index.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <title>MVL Wellness OAuth Dashboard</title>
+    <description>MVL Moves wellness platform - employee activity tracking, device connections, leaderboards, and challenges</description>
+  </url>
+
+  <!-- Google OAuth Redirect Page -->
+  <url>
+    <loc>https://kamalmokhmvl.github.io/google-fitbit-redirect/fitbitRedirect.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <title>Google OAuth Redirect</title>
+    <description>OAuth redirect endpoint for Google authentication flow</description>
+  </url>
+
+  <!-- Google Verification Page -->
+  <url>
+    <loc>https://kamalmokhmvl.github.io/google-fitbit-redirect/googlecefc417a0fed2119.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.3</priority>
+    <title>Google Site Verification</title>
+    <description>Google site verification page</description>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://kamalmokhmvl.github.io/google-fitbit-redirect/privacy.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <title>Privacy Policy</title>
+    <description>Privacy policy for MVL Wellness platform - information collection, usage, and data security</description>
+  </url>
+
+  <url>
+    <loc>https://kamalmokhmvl.github.io/google-fitbit-redirect/terms.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <title>Terms of Service</title>
+    <description>Terms of service for MVL Wellness platform usage agreement and user obligations</description>
+  </url>
+</urlset>
